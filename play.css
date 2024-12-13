@@ -1,0 +1,183 @@
+body {margin: 0; padding: 3px 0 0 0;
+	background-color: #000; background-image:url(https://pingstanton.com/hexcrawl/img/bkgd-starfield.jpg);
+	background-position: center top; background-repeat: no-repeat; background-attachment: fixed;
+	animation: backgroundTransition 90s ease-in-out infinite;
+}
+
+a:link {color: #99cccc; text-decoration: none; border-bottom: 0px solid #fff;}
+a:visited {color: #99cccc; text-decoration: none; border-bottom: 0px solid #fff;}
+a:hover  {color: #00ffff; text-decoration: none; border-bottom: 0px solid #00ffff;}
+a:active {color: #99cccc; text-decoration: none; border-bottom: 0px solid #fff;}
+
+a.btn:link {text-decoration: none; border: 0px;}
+a.btn:visited {text-decoration: none; border: 0px;}
+a.btn:hover {text-decoration: none; border: 0px;}
+a.btn:active {text-decoration: none; border: 0px;}
+
+.w01 {
+	width: 85%; min-width: 600px; height: 100vh;
+	margin-right:auto; margin-left:auto; margin-top: 15px; margin-bottom: 50px;
+	padding: 0;
+	animation: opacityTransition 4s ease forwards;
+	}
+.w02 {width: 100%; margin: 10px 0 0 0; padding: 3px 0 2px 0; 
+	background-color: #0099cc; border-radius: 30px;
+	border: 2px solid #0099cc;
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #ccffff; letter-spacing: 1px;
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);
+	text-align: left;
+	clear: both;
+	}
+.w02 strong {color: #fff;}
+
+.b01 {
+	width: 20%; margin: 0; padding: 0;
+	float: left;
+}
+
+.b02 {width: 70%;
+	margin: 0 0 0 30px; padding: 0;
+	float: left;
+}
+
+.astrogation {
+	width: 100%; margin: 10px 0px; padding: 3px 0 7px 0;
+	background-color: rgba(66, 66, 66, 0.5); border-radius: 30px;
+	border: 2px solid #666;
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #999; letter-spacing: 1px;
+	text-align: center;
+}
+.astrogation strong {color: #fff;}
+.astrogation p {margin: 0; padding: 4px 10px 0 10px;}
+.astrogation img {width: 150px; height: 150px; margin: 3px 0; padding: 0; border: 0;}
+
+.redalert {width: 100%; margin: 10px 0 0 0; padding: 3px 0; 
+	background-color: #ff0000; border-radius: 30px;
+	border: 2px solid #ff0000;
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #ccffff; letter-spacing: 1px;
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);
+	text-align: left;
+	clear: both;
+	animation: alertTransition 4s ease forwards infinite;
+	}
+
+.diagnostics {
+	width: 100%; margin: 10px 0px; padding: 3px 0 7px 0;
+	background-color: rgba(66, 66, 66, 0.5); border-radius: 30px;
+	border: 2px solid #666; color: #ccc;
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #999; letter-spacing: 1px;
+	text-align: center;
+}
+.diagnostics strong {color: #fff;}
+.diagnostics p {margin: 0; padding: 4px 10px 0 10px;}
+.diagnostics table {margin: 10px 0;}
+.diagnostics td {font: bold 0.9em/1.0em arial, helvetica, sans-serif;}
+.diagnostics img {margin: 0; padding: 0; opacity: 0.5;}
+
+.travelog {margin: 5px 20px; padding: 0; font: bold 1.0em/1.2em arial, helvetica, sans-serif; color: #ccc; text-align: left;}
+.travelog strong {color: #fff;}
+
+.statusship {padding: 3px 20px 3px 3px; color: #999;}
+
+.androidMsg {
+	width: 100%; margin: 10px 0px; padding: 0 0 4px 0;
+	background-color: rgba(66, 66, 66, 0.5); border-radius: 30px;
+	border: 2px solid #666;
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #ccc; letter-spacing: 1px;
+	text-align: left;
+}
+.androidMsg p {margin: 0; padding: 5px 15px;}
+.androidMsg img {width: 75px; height: 75px; float: right; margin: 0 0 5px 10px; border-radius: 0 20px 0 20px; border-left: 2px solid #666; border-bottom: 2px solid #666;}
+
+.message {width: 100%; height: auto; margin: 10px 0 10px 0; padding: 0 0 1em 0;
+	background-color: rgba(66, 66, 66, 0.8); border-radius: 30px;
+	border: 2px solid #666; overflow: auto;
+	font: bold 1.0em/1.2em arial, helvetica, sans-serif; color: #fff;
+	animation: opacityTransition 4s ease forwards;
+	clear: both;
+	}
+.message img {width: 250px; height: 250px; float: right; margin: 0 0 5px 15px; border-radius: 0 30px 0 30px; border-left: 2px solid #666; border-bottom: 2px solid #666;}
+.message p {margin: 1.0em 30px 0 30px; padding: 0;}
+.source {margin: 0.5em 30px 0 30px; font: bold 0.9em/1.1em arial, helvetica, sans-serif; letter-spacing: 1px; color: #ccc; border-bottom: 1px solid #ccc;}
+
+.transmission {color: #0f0; font: bold 0.9em/1.2em courier, 'courier new', monospace; letter-spacing: 1px;}
+.comms {color: #ccffcc; font: italic 1.0em/1.2em arial, helvetica, sans-serif; letter-spacing: 1px;}
+.ayi {color: #ccffff; font: bold 0.9em/1.2em arial, helvetica, sans-serif;}
+.shu {color: #ffffcc; font: bold 0.9em/1.2em arial, helvetica, sans-serif;}
+.unknown {color: #ccccff; font: italic 0.9em/1.1em arial, helvetica, sans-serif; letter-spacing: 1px;}
+.trade {color: #ffffcc; font: italic 0.9em/1.1em arial, helvetica, sans-serif; letter-spacing: 1px;}
+.hostile {color: #ff3366; font: italic 0.9em/1.1em arial, helvetica, sans-serif; letter-spacing: 1px;}
+
+.imgDisply {width: 100%; overflow: auto; clear: both; text-align: center;}
+.imgDisply img {margin: 0 20px; width: 464px; height: 110px; float: none; border: 0; clear: both;}
+
+.optionshed {width: 100%; margin: 15px 0 0 0; padding: 3px 0 2px 0; 
+	background-color: #0099cc; border-radius: 30px 30px 0 0;
+	border: 2px solid #0099cc; 
+	font: bold 0.8em/1.0em arial, helvetica, sans-serif; color: #fff; letter-spacing: 1px;
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);
+	text-align: center;
+	clear: both;
+	animation: opacityTransition 4s ease forwards;
+	}
+.optionshed strong {color: #fff;}
+.options {width: 100%; margin: 10px 0 50px 0; padding: 0; 
+	background-color: rgb(227,240,245,0.8); border-radius: 30px;
+	border: 2px solid #0099cc; overflow: auto;
+	font: normal 1.0em/1.2em arial, helvetica, sans-serif; color: #666;
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);
+	text-align: left;
+	clear: both;
+	animation: opacityTransition 4s ease forwards;
+	}
+.options p {padding: 5px 25px 5px 15px;}
+.opschoices {margin: 0; padding: 20px; text-align: left;}
+.opsmove {height: auto; margin: 5px 0 15px 15px; padding: 0; float: left; display: flow-root; text-align: left;}
+.galaxy {width: 200px; height: 200px; float: right; margin: 0 0 5px 20px; border-radius: 0 30px 0 30px; border-left: 2px solid #0099cc; border-bottom: 2px solid #0099cc;}
+.options td {padding: 7px 5px 5px 20px; font: normal 1.0em/1.2em arial, helvetica, sans-serif; color: #333; text-indent: -15px;}
+
+.red {padding: 3px; color: #fff; background-color: #ff0000;}
+
+.subbtn {
+	margin: 10px 10px 10px 40px; padding: 7px 30px 5px 30px; 
+	border-radius: 30px;
+	letter-spacing: 3px;
+	font: bold 0.8em/1.2em arial, helvetica, sans-serif; 
+	color: #0099cc; background-color: #fff;
+	border: 2px solid #fff;		
+	-webkit-box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25); 
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);	
+	clear: both;  display: flow-root;}
+
+.subbtn:hover {
+	transition: 0.9s;
+	border: 2px solid #0099cc;		
+	background-color: #0099cc; color: #ccffff;
+	-webkit-box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.50); 
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.50);
+}
+
+.debugging {width: 100%; margin: 50px 0 0 0; padding: 5px 20px 20px 20px;
+	background-color: #666; border-top: 2px solid #999;
+	font: normal 0.9em/1.2em courier, 'courier new', monospace; color: #fff;
+	text-align: left; clear: both;
+	}
+
+
+@keyframes opacityTransition {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes backgroundTransition {
+	0% {background-position: -300px 0px;}
+	50% {background-position: 0px 0px;}
+	100% {background-position: -300px 0px;}
+}
+
+@keyframes alertTransition {
+	0% {background-color: #ffffff; border: 2px solid #ffffff;}
+	50% {background-color: #ff0000; border: 2px solid #ff0000;}
+	100% {background-color: #ff0000; border: 2px solid #ff0000;}
+}
+

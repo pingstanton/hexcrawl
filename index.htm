@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hexcrawl Generator Game Project | Matthew Stanton</title>
+<style type="text/css"><!--
+
+html {padding: 10px; margin: 0; 
+	font: normal 1.0em/1.2em arial, helvetica, sans-serif; color: #000;
+	background-color: #f0f0f0;
+}
+
+a:link {color: #005DAA; text-decoration: none; border-bottom: 0px solid #fff;}
+a:visited {color: #005DAA; text-decoration: none; border-bottom: 0px solid #fff;}
+a:hover  {color: #EC9C1D; text-decoration: none; border-bottom: 0px solid #EC9C1D; transition: 0.4s; box-shadow: 0 0 10px 10px #ffffcc; background-color: #ffffcc;}
+a:active {color: #005DAA; text-decoration: none; border-bottom: 0px solid #fff;}
+
+a.btn:link {text-decoration: none; border: 0px;}
+a.btn:visited {text-decoration: none; border: 0px;}
+a.btn:hover {text-decoration: none; border: 0px;}
+a.btn:active {text-decoration: none; border: 0px;}
+
+h1 {margin: 0 0 7px 0; font: bold 2.5em/1.2em arial, helvetica, sans-serif;}
+h2 {margin: 10px 0 10px 0; padding: 10px 0 0 0; font: bold 1.6em/1.2em arial, helvetica, sans-serif; border-top: 1px solid #000;}
+h3 {margin: 10px 0 10px 0; padding: 10px 0 0 0; font: bold 1.4em/1.2em arial, helvetica, sans-serif; border-top: 1px solid #000;}
+
+.w01 {
+	width: 60%; min-width: 600px;
+	margin-right:auto; margin-left:auto; margin-top: 15px; margin-bottom: 50px;
+	padding: 0;
+	}
+
+.imgbx300 {width: 300px; margin: 0 0 15px 15px; padding: 5px; 
+	font: normal 0.8em/1.2em arial, helvetica, sans-serif; #color: #333;
+	overflow: auto; float: right;}
+
+.img300 {margin: 0 0 15px 0; width: 300px;		
+	box-shadow: 5px 5px 10px #999;
+}
+.imgadj {width: 100%; margin: 10px 0;}
+
+.subbtn {
+	margin: 10px 10px 10px 40px; padding: 7px 30px 5px 30px; 
+	border-radius: 30px;
+	letter-spacing: 3px;
+	font: bold 0.8em/1.2em arial, helvetica, sans-serif; 
+	color: #0099cc; background-color: #fff;
+	border: 2px solid #fff;		
+	-webkit-box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25); 
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.25);	
+	clear: both;  display: flow-root;}
+
+.subbtn:hover {
+	transition: 0.9s;
+	border: 2px solid #0099cc;		
+	background-color: #0099cc; color: #ccffff;
+	-webkit-box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.50); 
+	box-shadow: 3px 3px 15px 5px rgba(0,0,0,0.50);
+}
+
+.code {margin: 4px 0; padding: 10px; 
+	border: 1px solid #000; 
+	font: normal 0.8em/1.2em courier, 'courier new', monospace; #color: #666;
+	background-color: #fff;}
+
+.credit {margin: 10px 0 10px 0; padding: 10px; 
+	border: 1px solid #000; 
+	font: normal 0.8em/1.2em arial, helvetica, sans-serif; #color: #666;
+	background-color: #fff;}
+
+.col2 {
+ -webkit-column-count: 2; 
+ -moz-column-count: 2; 
+ column-count: 2;
+ -webkit-column-gap: 40px; 
+ -moz-column-gap: 40px; 
+ column-gap: 40px;
+ }
+
+.col3 {
+ -webkit-column-count: 3; 
+ -moz-column-count: 3; 
+ column-count: 3;
+ -webkit-column-gap: 40px; 
+ -moz-column-gap: 40px; 
+ column-gap: 40px;
+ }
+
+
+hr {
+    margin: 10px 0 5px 0;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.33), rgba(0,0,0,0)); 
+}
+
+--></style>
+</head>
+<body><div class="w01">
+
+<h1>Hexcrawl Generator Game Project</h1>
+<p><a href="wander.php"><strong>WANDER</strong> (navigation proof of concept)</a>&nbsp;| <a href="intro.php"><strong>REUNION MISSION</strong> (demo game)</a>
+<div class="credit">
+<strong>MATTHEW STANTON</strong><br />
+<a href="mailto:pingstanton@gmail.com">pingstanton@gmail.com</a><br />
+<hr />
+<strong>DH 780 Fa24: Building, Playing, Thinking</strong><br />
+Theory and Practice of Play in the Digital Humanities</strong><br />
+<strong>Instructor:</strong> <a href="https://jallred.net/wordpress/">Jeff Allred</a><br />
+</div>
+
+<h2>PART 1: WHAT IS A HEXCRAWL?</h2>
+
+<div class="imgbx300"><a href="imgstart/hexcrawlexample.png"><img src="imgstart/hexcrawlexample.png" class="img300" alt="Example of a Hexcrawl" /></a><br />
+An example hexcrawl from <em>Isle of the Unknown</em> by Geoffrey McKinney, Lamentations of the Flame Princess (2011). [<a href="imgstart/hexcrawlexample.png">click to enlarge</a>]</div>
+
+<p>In the early 1970s, the original <em>Dungeons & Dragons</em> game grew out of the tabletop wargaming hobby, specifically miniatures games that simulated battles between two belligerent forces of medieval warriors. Scenarios were straightforward - lead figurines moved in from opposite sides of a table filled with model terrain - but play was generally limited to contained battlefields. Leaving the map, as in moving pieces beyond the table's edge, literally meant leaving the game.</p>
+
+<p>The open-ended, freeform possibilities found in the new format of fantasy role-playing gaming pioneered by Gary Gygax and Dave Arneson were different. The "map" could be as small or as vast as players' imagination would allow. As individuals, players' characters could go in any direction, whether or not the game scenario's designer had anticipated or planned for such decisions.</p>
+
+<p>Some game masters would respond by trying to limit players' agency through intimidation, sending increasingly unbeatable obstacles into the story as a way to signal to players their characters should turn back. Clumsy efforts of trying to "get the game back on track" from errant players soon were dubbed the pejorative term "railroading," a metaphor in use long before <em>D&D</em> to imply politically compelling others through coercion and threats. As defined by game historian Justin Alexander about the practice, "It is the precise moment at which the GM negates a player's choice."</p>
+
+<p>(Alexander, J. [2015, March 13]. The Railroading Manifesto. The Alexandrian. <a href="https://thealexandrian.net/wordpress/36900/roleplaying-games/the-railroading-manifesto" target="_blank">https://thealexandrian.net/wordpress/36900/roleplaying-games/the-railroading-manifesto</a>.)</p>
+
+<p>A design reaction to such limited linear scenarios was the "sandbox" style of play, creating an open world that emphasizes exploration and emergent storytelling. The term played off a double meaning: a nod to the sand table miniature battlefields of <em>D&D's</em> wargaming roots, as well as the childhood experience of building anything in a backyard sandpit. Under this format, players made their choices about where to travel and what to investigate, often with minimal overarching narrative direction.<p>
+
+<p>(Peterson, John (2012). <em>Playing at the World: A History of Simulating Wars, People and Fantastic Adventures, from Chess to Role-Playing Games</em>, p. 14. Unreason Press.)</p>
+
+<p>To organize such roving gameplay, many designers adopted the hexcrawl, open maps typically using a hexagonal grid in which each hex represents a distinct area for the players to explore. The game master could then prepare a variety of encounters, locations, and events, many of which were procedural or modular, allowing for dynamic and unpredictable gameplay. This flexibility, however, requires a balance of preparation and improvisation from the designer, as the lack of a predefined plot demands responsiveness to the players' exploration choices.</p>
+
+<p>This project aims to create an easy-to-edit framework for game designers to set up hexcrawl scenarios, even going so far as to enable such maps to be run online without a game master adjudicating descriptions and gameplay outcomes. Two hexcrawl proof-of-concepts, <a href="wander.php"><strong>WANDER</strong></a> and <a href="intro.php"><strong>REUNION MISSION</strong></a>, are used here as working examples. Base files can be found at:</p>
+
+<p><strong>[GITHUB LINK TBD]</strong></p>
+
+<h2>PART 2: ELEMENTS OF A HEXCRAWL</h2>
+
+<div class="imgbx300"><a href="imgstart/greyhawkmap.jpg"><img src="imgstart/greyhawkmap.jpg" class="img300" alt="World of Greyhawk" /></a><br />
+Hex map from <em>The World of Greyhawk Gazetteer</em> by Darlene Pekul, TSR Hobbies Inc. (1980). [<a href="imgstart/greyhawkmap.png">click to enlarge</a>]</div>
+
+<p>Essential elements of a hexcrawl game include the following:</p>
+
+<p><strong>A. THE HEX MAP:</strong> A play space for this style of design traditionally divides into hexagonal tiles, with each hex representing a specific area. Distinctions between hexes could be geographic (different nations and seas), terrains (plains, forests, mountains, deserts), or concepts (points of debate). Numbering systems set a unique ID for each hex, making it easier for players to orient their location and progress.</p>
+
+<p><strong>B. KEY LOCATIONS:</strong> Unique points of interest within these map hexes must include narratives, challenges, and rewards for players to pursue. Following the previous examples, these could be significant cities and ports (in nations), ruins and natural landmarks (within terrains), or answers to controversial questions (in debate). These locations serve as focal points for player interaction, offering opportunities for problem-solving and story progression while broadening the thematic or conceptual framework of the hexcrawl.</p>
+
+<p><strong>C. RANDOM ENCOUNTERS:</strong> As an open world, using procedural methods of filling hexes with narrative challenges (creatures, events, hazards) randomly determined from tables of options provides game masters with a flexible alternative to exhaustive preparation. As players have agency to go in any direction, the problem of "missing" material designers intended to showcase is eliminated.</p>
+
+<p><strong>D. TRAVEL RULES:</strong> Among the resource management game aspects given to players, there must be guidelines for movement across the hexcrawl map. Typically, this might simply be time and opportunity costs based on the scale of hexes and travel speeds, but adding costs of fuel, survival supplies, or other resources can deepen the immersion into players' decisions.
+
+<p><strong>E. CHALLENGES AND REWARDS:</strong> Each hex should present at least one opportunity for players to make risk-and-reward choices under the hexcrawl's thematic framework. When presented with a narrative situation, a player may choose to respond by option #1, #2, or #3, each matched to a possible outcome. In even more open systems such as role-playing games, game masters will have rules and tools for almost any reaction players devise: Fight, flee, parley, sneak, trade, or so forth. Rewards for success may include increased resources, new story information, or points toward the game's victory conditions. Costs for failure may range from lost resources to elimination from the game.
+
+<p><strong>F. TRACKING TOOLS:</strong> A system for recording players' travels in distances and time serves both as a resource clock and a record of exploration progress. The hexcrawl may make use of such tracking to change encounters based on weather, seasons, world events, or other narrative factors.
+
+<h2>PART 3: ABOUT PHP</h2>
+
+<p>The code for this project is written in PHP, a widely used open-source scripting language designed primarily for web development. This section provides a brief introduction to the code. Readers already familiar with PHP may wish to skip ahead to <a href="#part3">Part 3: The Hex Map</a>.</p>
+
+<p>PHP code can be edited using any text or code editor on operating systems such as Linux, Windows, or macOS. It integrates seamlessly with popular web servers like Apache and Nginx. Unlike compiled languages, PHP scripts are executed directly on the server, dynamically generating interactive web pages. This is achieved by processing the script's logic and outputting the final content, often using an HTML template, as specified in the "echo" command.
+
+<p>Example: Write and save a file named "helloworld.php," upload it to a web server running PHP, and call the page from its web address:
+
+<p>File content:
+
+<div class="code">&lt;?php<br />
+echo "Hello, World!";<br />
+?&gt;<br /></div>
+
+<p>Web address: <em>http://(your domain name)/helloworld.php</em>
+
+<p>The script should display the worlds "Hello, World!" in a web browser.
+
+<p>A game designer can customize the script from this project by filling in variables noted by a dollar sign or sometimes formatting in an array of variables to save space in the script...</p>
+
+<div class="code">
+$hexName = "The Lair of the Dragon";<br />
+$names = array("Conan", "Elric", "Merlin", "Morgan le Fay", "Gandalf");<br />
+$name = $names[3] // name will be set to "Morgan le Fay"<br />
+</div>
+
+<p>Another function commonly used in these PHP scripts generates a random number to assign a value to a variable. For instance, in the example below the variable <strong>$oath</strong> does not have a value until the script generates a random number to determine which text should be assigned to it. While this approach is less compact and efficient compared to other methods, it can be easier to read and review when examining the response options. Additionally, previously defined variables can be incorporated into the text of an option. For example, the variable <strong>$name</strong>, representing the player's chosen name, is dynamically inserted into the string. This makes the script both flexible and customizable.
+
+<div class="code">
+$oath = "";<br />
+$oathPick = mt_rand(1,5);<br />
+if ($oathPick == "1") {$oath = "A wizard is never late, nor is he early.";}<br />
+elseif ($oathPick == "2") {$oath = "The flower that blooms in adversity is the most rare and beautiful of all.";}<br />
+elseif ($oathPick == "3") {$oath = "This is my boomstick!";}<br />
+elseif ($oathPick == "4") {$oath = "Do or do not. There is no try.";}<br />
+elseif ($oathPick == "5") {$oath = "Hello. My name is $name. You killed my father. Prepare to die.";}<br />
+</div>
+
+<p>Random choices may also be based off range bands, such as 1 to 3 out of 6 means "option A," 4 or 5 means "option B," and 6 means "option C." 
+
+<div class="code">
+$starship = "";<br />
+$starshipPick = mt_rand(1, 100);<br />
+if ($starshipPick >= "0") {$starship = "USS Enterprise";}<br />
+if ($starshipPick >= "20") {$starship = "Millennium Falcon";}<br />
+if ($starshipPick >= "35") {$starship = "Nostromo";}<br />
+if ($starshipPick >= "66") {$starship = "Serenity";}<br />
+if ($starshipPick >= "82") {$starship = "Discovery One";}<br />
+</div>
+
+<h2>PART 4: SIMPLE HEX MAP SETUP</h2>
+
+<p>In order to track hexes' relative positions and unique content, an ID number has been assigned to each hex. For simplicity, both examples in this project use <strong>Hex #1000000</strong> ("the one million hex") as the starting point, theoretically allowing a player to travel thousands of hexes in any direction before reaching the virtual "edge" of the play space. In actual practice, both project examples only use about a five-hex radius before using blank "default" options for non-utilized spaces. 
+
+<img src="imgstart/hexgrid.png" class="imgadj" alt="hex grid" />
+
+<p>The <a href="wander.php"><strong>WANDER</strong></a> script is a simple demonstration of navigating such a hexcrawl. Placeholder names and one-sentence descriptions have been assigned to 90 hexes radiating out around Hex #100000 (see above illustration). Editing <strong>wander.php</strong> allows designers to replace this text with custom content following this format:
+
+<div class="code">
+/* EDIT YOUR HEXCRAWL STARTING HERE */<br />
+$mapName = "Wander Demo";<br />
+<br />
+$hex001name = "The Veil of Silence";<br />
+$hex001desc = "A colossal crystal tree stands at the center of the hex, its branches humming with faint, melodic energy.";<br />
+<br />
+$hex002name = "The Whispering Edge";<br />
+$hex002desc = "A shimmering lake ripples despite the absence of wind, reflecting an upside-down world in its surface.";<br />
+<br />
+$hex003name = "The Forgotten Melody";<br />
+$hex003desc = "A ruined tower leans precariously, its stones glowing faintly in the dark as if imbued with latent magic.";<br />
+<br />
+(etc.)
+</div>
+
+<p>For the purposes of demonstrating this script, the content for each variable has been hard-coded into the <strong>wander.php</strong>, but it would be a simple matter to import such data from an external source, such as a text file or <a href="wander.csv">this sample .csv file</a>, depending on whichever method was easiest for the designer.</p>
+
+<h2>PART 5: INTERACTIVE HEX MAP DEMO</h2>
+
+<p>While <strong>WANDER</strong> was only an introductory exercise in "wandering" around a hexcrawl layout, a game experience needs to add the missing elements of key locations, random encounters, travel rules, challenges, and rewards. The example game <a href="intro.php"><strong>REUNION MISSION</strong></a>, a short demo hexcrawl using science-fiction themes inspired by Cixin Liu's <em>The Dark Forest</em>, illustrates these possibilities.</p>
+
+<p>There are two script files for <a href="intro.php"><strong>REUNION MISSION</strong></a>: <strong>intro.php</strong>, which walks the user through four instruction slides that include two "character creation" decisions, and <strong>play.php</strong>, which loops through random encounters linked to hex spaces.</p>
+
+<p><img src="imgstart/introphpslides.jpg" class="imgadj" alt="REUNION MISSION intro slides" /></p>
+
+<p>In <strong>intro.php</strong>, the player is asked to provide a name for their imaginary starship. (If the user enters the name <strong>DEBUG</strong> here, a debugging panel of variables will display in the play.php part of the game.) Choosing skill specialties for both android crew members will affect the attrition rate of the player's starship resources in future game turns. If no selections are made at this stage, the ship is simply named <em>Reunion Ship I</em> by default.</p>
+
+<p><img src="imgstart/playphpscreenshot.jpg" class="imgadj" alt="REUNION MISSION play slides" /></p>
+
+<p>In <strong>play.php</strong>, the script's available interactions with the player alternate between an <strong>encounter state</strong> where text is presented and two to five response choices are given, and a <strong>move state</strong> which displays text reflecting the consequences of the player's decision and the choice of which neighboring hex to visit next.</p>
+
+<p>A full version of this game would include 30 or more encounters randomly assigned to core hexes, plus procedurally-generated encounters for "off the map" hexes. For this demo, the game is limited to five to six scripted encounters. A number of global variables are selected from predesigned arrays either at random on every page load or based on hex-specific key variables. These options include images, character titles and names, technobabble terms, and lines of non-player character dialog.</p>
+
+<p>Throughout the game, and hidden from the player, there are five victory conditions being tracked: <strong>Empathy</strong> ($faction01score), <strong>Pragmatism</strong> ($faction02score), <strong>Individualism</strong> ($faction03score), <strong>Collectivism</strong> ($faction04score), and <strong>Entropy</strong> ($faction05score.) A simple number score is associated with different options chosen or not chosen by the player in each encounter.</p>
+
+<p><strong>Encounter 0: Into the Unknown.</strong> The first encounter in Hex #1000000 continues the introduction text while showing the player to the main game interface. On the left is locator, hex-linked image, and description of the player's current location on the hexcrawl, along with a link to open a broader hexcrawl map in a new web browser window. 
+
+<p>Below this locator is a tracker of starship resources. Travel attrition will reduce any resource that is not a specialty of either android, per the skill selections the player made in intro.php. In later encounters, if a specific option is keyed to the availability of a resource whose value has dropped to zero, that option will not be displayed to the player.</p>
+
+<p>On the right is the encounter's text and an illustrative image. The text itself in this encounter only contains a few procedural elements - the leader's title, name, minor variations in dialog - and the initial game decision for the player is only to select the next adjoining hex to visit.</p>
+
+<p><strong>Encounter 1: The Trouble With Drones.</strong> This encounter introduces the concept of player choices affecting the ship's resources. If the player willingly gives up a quantity of drones, the problem reported by the encounter text is easily solved. If the player refuses the dialog request, the hidden tracking scores will reflect this decision at the end of the game demo.</p>
+
+<p><strong>Encounter 2: The Belligerent Colony.</strong> This encounter ramps up the risk-versus-reward opportunity of encounters by offering five response options, each with different resource costs not clearly revealed to the player before making a decision. Three of the options will deduct random amounts from all of the starship's resources, while others cause minimal risk.</p>
+
+<p><strong>Encounter 3: Mad Science.</strong> This encounter has many different pieces of procedurally generated dialog, but the aim of the text remains largely the same: Confront the player with an ethical dilemma and choose branching options down different resolution paths.</p>
+
+<p><strong>Encounter 4: The Android's Garden.</strong> Similar to Mad Science, this encounter features branching and follow-up text prompts triggered by the player's decisions. Unlike previous more action-based responses, resource costs are made further unclear by focusing only on choosing dialog as a response.</p>
+
+<p><strong>Encounter 5: Close Encounter.</strong> Another branching text encounter, this one is designed to set up some backstory for the final encounter.</p>
+
+<p><strong>Encounter 6: The Vault.</strong> Unlike previous encounters, the player is shown a visual puzzle to solve by selecting from among four possible images. Picking any of the three incorrect options from this encounter forces the player to repeat this same scenario at the next visited hex until the correct response is chosen. The correct answer immediately moves the player to the game demo's conclusion and reveals the hidden victory condition scores that have been secretly tallied during the game. The player is also given the option to restart the game.</p>
+
+<p><strong>Encounter X: The Unknown.</strong> Moving into a hex without associated details does not cost the player resources, but neither does it advance the game state. Should a player begin to move away from the hexes designed to be visited without keeping careful track of how to return to known star systems, the player risks getting lost in uncharted space. This "soft railroad" could be addressed in a version of this game beyond the scope of the demo at a later time.</p>
+
+<h3>Inspirations for <em>Reunion Mission</em></h3>
+
+<p><strong>Novels</strong></p>
+
+<p>
+Clarke, Arthur C. (1968). <em>2001: A Space Odyssey</em>. Hutchinson (UK), New American Library (US).<br />
+Clarke, Arthur C. (1982). <em>2010: Odyssey Two</em>. Ballantine Books.<br />
+Liu, Cixin (2016). <em>The Dark Forest (Book 2 of the 3-Body Problem Series)</em>. Tor Books.<br />
+VanderMeer, Jeff (2014). <em>Annihilation</em>. Farrar, Straus and Giroux.<br />
+</p>
+
+<p><strong>Films</strong></p>
+
+<p>
+Garland, Alex (2014). <em>Ex Machina</em>. A24.<br />
+Garland, Alex (2018). <em>Annihilation</em>. Paramount Pictures.<br />
+O'Bannon, Dan (screenwriter) (1979). <em>Alien</em>. 20th Century Fox.<br />
+Villeneuve, Denis (2016). <em>Arrival</em>. Paramount Pictures.<br />
+</p>
+
+<p><strong>Television</strong></p>
+
+<p>
+Brooker, Charlie (2011-2023). <em>Black Mirror</em> (series). Channel 4.<br />
+Guzikowski, Aaron (2022-2023). <em>Raised by Wolves</em>. HBO Max.<br />
+Roddenberry, Gene et. al. (1966-2024). <em>Star Trek</em> (various series). Paramount Global.<br />
+</p>
+
+<p><strong>Games</strong></p>
+
+<p>
+McCoy, Sean (2018, 2023). <em>Mothership</em>. Tuesday Night Games.<br />
+Nogueira, Diogo (2020). <em>Screams Amongst The Stars</em>. Old Skull Publishing.<br />
+Niblaeus, Carl and Plogfors, Christian (2022). <em>Death In Space</em>. Free League Publishing.<br />
+Boyle, Rob and Cross, Brian (2009). <em>Eclipse Phase</em>. Catalyst Game Labs and Posthuman Studios.<br />
+</p>
+
+</div></body>
+</html>
+

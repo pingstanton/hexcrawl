@@ -163,7 +163,7 @@ $cmnd = $_POST["command"];
 $currentHex = $_POST["currentHex"];
 if ($currentHex < "0") {$currentHex = "1000000";}
 if ($cmnd == "restartGame") {
-	header("Refresh: 0; URL=https://www.chimaboo.com/game/intro.php");
+	header("Refresh: 0; URL=https://www.pingstanton.com/hexcrawl/intro.php");
 }
 $hexNum = $currentHex;
 $gameState = $nextState;
